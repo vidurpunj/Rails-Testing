@@ -28,16 +28,14 @@ rspec spec/controllers
 # Capybara:
 Acceptance test framework for web applications
 Capybara helps you test web applications by simulating how a real user would interact with your app.
-gem 'webdrivers'
+Capybara provides helper methods like fill_in to fill in a form field, click_on to click a button, etc.
 
-# Rspec: BDD its parent TDD
+
+# Rspec: BDD, its parent is TDD
 Behaviour Driven Development for Ruby.
 Behavior-driven development is an idea built on top of TDD.
 Rails tests operate at a “low level”, meaning no browser interaction is involved.
 Low-level tests can be executed with just RSpec
-Capybara provides helper methods like fill_in to fill in a form field, click_on to click a button, etc.
-
-gem 'rails-controller-testing'
 
 # Cucumber:
 Cucumber is a tool for writing test cases in something close to English.
@@ -45,6 +43,11 @@ Cucumber can be connected with RSpec and Capybara and used to write integration 
 Cucumber adds both a layer of mental overhead and a layer of maintenance overhead on top of the RSpec + Capybara combination.
 
 #  MiniTest:
+Minitest is the default testing suite used with Rails
+only for Unit Testing
+Minitest is small, fast, and it aims to make tests clean and readable. It supports test-driven development (TDD), behavior-driven development (BDD), mocking, and benchmarking.
 
 #  test-unit:
 A unit testing framework that’s part of Ruby’s standard library.
+can be used for Unit Testing, Intergration Testing
+if you are writing new test code use Minitest instead of Test::Unit
