@@ -28,6 +28,7 @@ rspec spec/controllers
 # Capybara:
 Acceptance test framework for web applications
 Capybara helps you test web applications by simulating how a real user would interact with your app.
+gem 'webdrivers'
 
 # Rspec: BDD its parent TDD
 Behaviour Driven Development for Ruby.
